@@ -1,0 +1,138 @@
+//* {
+//  cursor: url("../img/cursor2.png"), pointer !important;
+//}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background: #252627;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+.tags {
+  color: #515152;
+  margin-left: 30px;
+  font-size: 18px;
+  font-family: 'MyTags', cursive;
+}
+
+.tag_h1 {
+  color: #515152;
+  font-size: 18px;
+  font-family: 'MyTags', cursive;
+}
+
+.text_h1 {
+  font-size: 56px;
+  line-height: 73px;
+  margin: 0;
+  font-family: "MyHeader", sans-serif;
+  font-weight: normal;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+body .infoBox {
+  width: 250px !important;
+  transform: none !important;
+  overflow: inherit !important;
+}
+
+.error {
+  border-bottom: 2px solid red !important;
+}
+
+.animated {
+  display: inline-block;
+}
+
+.space {
+  width: 10px;
+  display: inline-block;
+}
+
+.split-words {
+  margin-left: 5px;
+}
+
+@font-face {
+  font-family: 'MyTags';
+  src: url('../fonts/LaBelleAurore.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'MyHeader';
+  src: url('../fonts/Millunium-BOLD.ttf') format("truetype");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'MyLogo';
+  src: url('../fonts/DancingScript-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'MyLogo';
+  src: url('../fonts/DancingScript-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'LogoImg';
+  src: url('../fonts/tempsitc.ttf') format("truetype");
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow: inherit;
+  }
+  .tags {
+    margin-left: 5px;
+  }
+  .text_h1 {
+    font-size: 35px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 481px /*768px*/
+) and (max-width: 1024px) {
+  body {
+    overflow: inherit;
+  }
+  .tags {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+
+}
+
+@media only screen and (min-width: 1824px) {
+
+}

@@ -1,0 +1,275 @@
+.contact_content {
+  height: 90%;
+  top: 5%;
+  left: 55px;
+  min-height: 566px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: space-between;
+  width: calc(100% - 55px);
+
+  .text_h1 {
+    color: #08fdd8;
+  }
+
+  > .contact_main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > .left_side {
+      margin-left: 6%;
+      width: 35%;
+      vertical-align: middle;
+      display: block;
+      max-height: 90%;
+
+      .left_side_text {
+        color: red;
+      }
+
+      form {
+        width: 100%;
+        opacity: 0.7;
+
+        div.input_row:not(:first-child) {
+          padding: 0;
+          margin: 0 0 10px;
+          overflow: hidden;
+          display: block;
+          clear: both;
+          position: relative;
+        }
+
+        div.input_row:first-child {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 0 10px;
+          overflow: hidden;
+          clear: both;
+          position: relative;
+
+        }
+
+        > div.input_row input {
+          width: 100%;
+          border: 0;
+          background: #37393b;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 0 20px;
+          box-sizing: border-box;
+          font-family: monospace;
+          transition: .3s all linear;
+          border-bottom: 2px solid #08fdd8;
+
+          &:hover {
+            background: rgba(8, 253, 216, 0.13);
+            box-shadow: inset 0 0 20px #08fdd96e;
+          }
+          &:focus {
+            background: rgba(8, 253, 216, 0.04);
+            box-shadow: inset 0 0 10px #08fdd96e;
+          }
+        }
+        div.input_row div.half {
+          width: 50%;
+        }
+
+        div.input_row div.half > input {
+          width: 98%;
+        }
+
+        div.input_row div.half:nth-child(2) > input {
+          width: 98%;
+          margin-left: 2%;
+        }
+
+        > div > textarea {
+          width: 100%;
+          border: 0;
+          background: #37393b;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          padding: 20px;
+          box-sizing: border-box;
+          min-height: 150px;
+          max-height: 250px;
+          resize: vertical;
+          border-bottom: 2px solid #08fdd8;
+          transition: .3s all linear;
+          &:hover {
+            background: rgba(8, 253, 216, 0.13);
+            box-shadow: inset 0 0 20px #08fdd96e;
+          }
+          &:focus {
+            background: rgba(8, 253, 216, 0.04);
+            box-shadow: inset 0 0 10px #08fdd96e;
+          }
+        }
+
+        > div > input#submit {
+          color: #08fdd8;
+          font-size: 11px;
+          letter-spacing: 3px;
+          font-family: "Open Sans", sans-serif;
+          text-decoration: none;
+          padding: 8px 10px;
+          border: 1px solid #08fdd8;
+          border-radius: 4px;
+          background: transparent;
+          text-transform: uppercase;
+          float: right;
+          text-align: center;
+          margin-right: 10px;
+          transition: .3s linear;
+          &:hover {
+            background: #08fdd8;
+            color: #252627;
+          }
+          &:focus {
+            background: rgba(8, 253, 216, 0.04);
+            box-shadow: inset 0 0 10px #08fdd96e;
+          }
+        }
+
+      }
+    }
+    > .right_side {
+      width: 65%;
+      height: 114%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: -5%;
+      top: -6%;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%);
+      > div {
+        height: 100%;
+      }
+      > div#map {
+        height: 400px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contact_content {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 60px;
+    left: 0;
+
+    > .contact_main {
+      flex-direction: column;
+
+      > .left_side {
+        margin: 0 0 70px 6%;
+        width: 90%;
+        form {
+          width: 102%;
+          margin-left: -4%;
+
+          div.input_row {
+
+            &:first-child {
+              flex-direction: column;
+            }
+            div.half {
+              width: 100%;
+              input {
+                width: 100%;
+              }
+              &:first-child {
+                padding: 0 0 10px;
+              }
+              &:nth-child(2) {
+                > input {
+                  width: 100%;
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+
+        }
+      }
+      > .right_side {
+        width: 100%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        overflow: auto;
+        margin: 0;
+        min-height: 300px;
+        position: inherit;
+        > div {
+          height: 65%;
+          width: 100%;
+          position: absolute;
+          top: 37%;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px/*768px*/) and (max-width: 1024px) {
+  .contact_content {
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 60px;
+    left: 0;
+
+    > .contact_main {
+      flex-direction: column;
+
+      > .left_side {
+        margin: 0 0 70px 6%;
+        width: 90%;
+        form {
+          width: 102%;
+          margin-left: -4%;
+          > div > input#submit {
+            padding: 10px 45px;
+          }
+        }
+      }
+
+      > .right_side {
+        width: 100%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        overflow: auto;
+        margin: 0;
+        min-height: 300px;
+        position: inherit;
+        > div {
+          height: 65%;
+          width: 100%;
+          position: absolute;
+          top: 37%;
+          left: 0;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+
+}
+
+@media only screen and (min-width: 1824px) {
+
+}

@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {BrowserRouter as Router} from 'react-router-dom';
+import './css/main.scss';
 import * as serviceWorker from './serviceWorker';
 
+import Layout from './js/Layout';
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+        <Layout />
+    </Router>,
   document.getElementById('root')
 );
 
